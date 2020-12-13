@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-
-</head>
-<style>
-    body {
-        background-color: skyblue;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #fff;
-        padding: 30px;
-    }
-    
-    h1 {
-        font-size: 48px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-align: center;
-    }
-    
-    a {
-        text-align: center;
-        font-size: 16px;
-        color: #fff;
-    }
-</style>
-
-<body>
-    <h1>Welcome To Node Js Websites</h1>
-    <a href="/about">About Page</a><br>
-    <a href="/contact">Contact Page</a><br>
-</body>
+{% extends 'layout.html' %} {% block content%}
+<h1>Welcome To Node Js Websites</h1>
+<a href="/about">About Page</a><br>
+<a href="/contact">Contact Page</a><br>
+<a href="/">Back To Home</a><br>
 <script>
     alert("Welcome to this website");
 
     console.log("test for websites");
-</script>
-
-</html>
+</script>{% endblock %}
