@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "mysql": "^2.18.1",
     "routes": "^2.1.0",
     "swig": "^1.4.2"
   }
